@@ -1,0 +1,36 @@
+@media screen and (min-width:950px) {
+    * {
+        margin: 0;
+        padding: 0;
+        border: 1px solid rgb(135, 160, 214);
+    }
+    
+    h1 {
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    
+    a {
+        font-size: 16px;
+    }
+}

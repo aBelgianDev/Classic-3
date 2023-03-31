@@ -1,0 +1,200 @@
+#header {
+    animation-name: slide-up-to-down-apparition;
+    animation-duration: 2s;
+}
+
+/* #section-1 .left-container .description.is-inview .btn-container a {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+} */
+
+/* #section-7 .bottom-container.is-inview .presentation {
+    animation-name: slide-left-to-right-apparition;
+    animation-duration: 2s;
+} */
+
+.top-container {
+    opacity: 0;
+}
+
+.top-container.is-inview {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+#section-1 .content .left-container .description h1 {
+    opacity: 0;
+}
+
+#section-1 .content .left-container .description p {
+    opacity: 0;
+}
+
+#section-1 .content .left-container .description .btn-container {
+    opacity: 0;
+}
+
+#section-1 .content .left-container.is-inview .description h1 {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+#section-1 .content .left-container.is-inview .description p {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+    transition-delay: 0.3s;
+}
+
+#section-1 .content .left-container.is-inview .description .btn-container {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+    transition-delay: 0.6s;
+}
+
+#section-1 .content .right-container.is-inview .image {
+    animation-name: slide-left-to-right-apparition;
+    animation-duration: 3s;
+}
+
+#section-2 .bottom-container .segment {
+    opacity: 0;
+}
+#section-2 .bottom-container .segment.is-inview {
+    animation-name: slide-right-to-left-apparition;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#section-3 .content .bottom-container .left-container,
+#section-3 .content .bottom-container .right-container {
+    opacity: 0;
+}
+
+#section-3 .content .bottom-container .left-container.is-inview,
+#section-3 .content .bottom-container .right-container.is-inview {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+#section-4 .segment {
+    opacity: 0;
+}
+
+#section-4 .segment.is-inview {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+#section-5 .left-container,
+#section-5 .right-container {
+    opacity: 0;
+}
+
+#section-5 .left-container.is-inview {
+    animation-name: slide-left-to-right-apparition;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#section-5 .right-container.is-inview {
+    animation-name: slide-right-to-left-apparition;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#section-6 .right-container .card.is-inview {
+    animation-name: slide-right-to-left-apparition;
+    animation-duration: 2s;
+}
+
+#section-7 .right-container .card.is-inview {
+    animation-name: slide-up-to-down-apparition;
+    animation-duration: 2s;
+}
+
+/* hover-effects */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+@keyframes slide-up-to-down-apparition {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }
+
+@keyframes slide-left-to-right-apparition {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+
+  @keyframes slide-right-to-left-apparition {
+    from {
+        transform: translateX(+100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+
+  @keyframes fold-left-to-right-apparition {
+    from {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+    to {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+  }
+
+  @keyframes inflate-left-to-right-apparition {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+  }
+
+  @keyframes inflate-right-to-left-apparition {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+  }
